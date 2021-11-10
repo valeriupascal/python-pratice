@@ -65,7 +65,7 @@ class max_heap:
     # helper function to print the heap
     def print_heap(self):
         for i in range(1, (self.cur_size//2)+1):
-            print("Parent Node is "+ str(self.Heap[i])+" Left Child is "+ str(self.Heap[2 * i]) +                  " Right Child is "+ str(self.Heap[2 * i + 1]))
+            print("Parent Node is "+ str(self.Heap[i])+" Left Child is "+ str(self.Heap[2 * i]) + " Right Child is "+ str(self.Heap[2 * i + 1]))
   
   
  
