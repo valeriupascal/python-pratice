@@ -1,0 +1,26 @@
+{% extends 'base/main.html' %}
+
+{% block content%}
+
+<div class="header-bar">
+    <a href="{% url 'tasks'%}">&#8592;back</a>
+</div>
+
+
+
+<div class="card-body">
+    {% if form.instance.pk %}
+    <h3>Edit Task</h3>
+    {% else %}
+    <h3>Create Task</h3>
+    {% endif %}
+    
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="button" type="submit" value="submit">
+    </form>
+</div>
+
+
+{% endblock content %}
